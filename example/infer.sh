@@ -18,9 +18,11 @@
 
 # Get the absolute path of the script's directory
 script_dir=$(dirname "$(realpath "$0")")
+echo "script_dir: $script_dir"
 
 # Get the root directory
 root_dir=$(dirname "$script_dir")
+echo "root_dir: $root_dir"
 
 # Set default parameters
 device=0
@@ -32,6 +34,7 @@ prompt_speech_path="example/prompt_audio.wav"
 
 # Change directory to the root directory
 cd "$root_dir" || exit
+pwd
 
 source sparktts/utils/parse_options.sh
 
