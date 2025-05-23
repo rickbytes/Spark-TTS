@@ -10,9 +10,9 @@ if [ -n "$msg" ]; then
     echo "[$project_name] commit done."
 
     # 设置 HTTP 代理
-    git config http.proxy http://localhost:7890
+    # git config http.proxy http://localhost:7890
     # 设置 HTTPS 代理
-    git config https.proxy http://localhost:7890
+    # git config https.proxy http://localhost:7890
 
     git pull --all
     echo "[$project_name] pull done."
